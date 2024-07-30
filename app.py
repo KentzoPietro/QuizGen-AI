@@ -15,7 +15,7 @@ def save_uploaded_file(uploaded_file):
     return temp_dir
 
 def quiz_generator(file_dir): 
-    Settings.llm = Groq(model="llama3-70b-8192", api_key="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")
+    Settings.llm = Groq(model="llama3-70b-8192", api_key="YOUR_API_KEY_HERE")
     prompt = '''Generate 10 Multiple Choice Questions based off the uploaded file. 
                 Prefix the choices with letters with A,B,C,D
                 Format your answer in JSON. Return the raw output only. The answer is the index of the correct option. 
